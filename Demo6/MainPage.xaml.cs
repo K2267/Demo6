@@ -25,6 +25,21 @@ namespace Demo6
         public MainPage()
         {
             this.InitializeComponent();
+
+        }
+
+        private void trucksButton_Click(object sender, RoutedEventArgs e)
+        {
+            int value = int.Parse(truckTextBlock.Text); //"0" muuttuu 0
+            value++;
+            truckTextBlock.Text = value.ToString(); //1 -> "1"
+        }
+
+        private void carsButton_Click(object sender, RoutedEventArgs e)
+        {
+            int value = int.Parse(carTextBlock.Text); //"0" muuttuu 0
+            value++;
+            carTextBlock.Text = value.ToString(); //1 -> "1"
         }
     }
 }
